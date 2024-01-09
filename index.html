@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="q">
+        <h1>Are You Short ?</h1>
+    </div>
+    <div class="box">
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+    </div>
+    <div class="mobile">
+        <h1>Open in computer or laptop</h1>
+    </div>
+    <script>
+        var no = document.querySelector(".no");
+        no.addEventListener("mouseover", () => {
+            // no.  style.color = "red";
+            // no.style.top = `0px`;
+            // no.style.left = `0px`;
+            let a = Math.random() * 400 + 100;
+            let b = Math.random() * 400 + 100;
+            no.style.transition = "ease-in .25s";
+            no.style.top = `${a}px`;
+            no.style.left = `${b}px`;
+        });
+        document.querySelector(".yes").addEventListener("click", () => {
+            alert("Yes,you are short !")
+        });
+    </script>
+</body>
+
+</html>
